@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Street Food POS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to the canteen! Here are our street foods menu</h1>
+        <div class="row">
+          <div class="col-12">
+                <br><h3>Prices are shown below.</h3>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-6">
+              <br>
+              <ul>
+                  <li><h4>Burger - 60 Pesos</h4></li>
+                  <li><h4>Fries - 50 Pesos</h4></li>
+                  <li><h4>Fishball (20 pcs.) - 20 Pesos</h4></li>
+                  <li><h4>Kikiam (10 pcs.) - 25 Pesos</h4></li>
+              </ul>
+              <br>
+          </div>
+  
+        <div class="row">
+          <div class="col-4">
+              <button class="addFood"><h2>Add a food item</h2></button>
+            </div>
+          </div>
+          <div class="col-4">
+              <br><h3>Choices:</h3>
+              </div>
+            </div>
+            
+        <div class="row">
+          <div class="col-4">
+              <br>
+              <div class="order-select" style="width:200px;">
+                  <select>
+                    <option value="0">Select order:</option>
+                    <option value="1">Burger</option>
+                    <option value="2">Fries</option>
+                    <option value="3">Fishball</option>
+                    <option value="4">Kikiam</option>
+                  </select>
+                </div>
+            </div>
+          </div>
+          <div class="col-4">
+              <br>
+              <div class="order-quantity" style="width:200px;">
+                  <form>
+                      <label for="quantity"><h3>Quantity:</h3></label><br>
+                      <input type="number" id="quantity" name="quantity"><br>
+                    </form>
+                </div>
+            </div>
+            <div class="col-4">
+              <br>
+              <div class="cash-payment" style="width:200px;">
+                  <form>
+                      <label for="payment"><h3>Cash:</h3></label><br>
+                      <input type="text" id="payment" name="payment"><br><br>
+                    </form>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<div class="container">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Pay</button>
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Payment Successful</h4>
+        </div>
+        <div class="modal-body">
+          <p>Thank you for your order!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
